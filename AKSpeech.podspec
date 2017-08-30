@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = '0.0.5'
   s.summary      = '语音播放封装'
   s.ios.deployment_target = '7.0'
-  s.homepage     = 'https://github.com/helinyu/YDOpenHardwarePod'
+  s.homepage     = 'https://github.com/helinyu/AKSpeech'
   s.license      = 'MIT'
   s.authors      = { "felix" => "2319979647@qq.com" }
   s.platform     = :ios, '7.0'
