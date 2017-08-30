@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'AKSpeech'
-  s.version      = '0.0.4'
+  s.version      = '0.0.5'
   s.summary      = '语音播放封装'
   s.ios.deployment_target = '7.0'
   s.homepage     = 'https://github.com/helinyu/YDOpenHardwarePod'
