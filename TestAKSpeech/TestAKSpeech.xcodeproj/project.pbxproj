@@ -15,9 +15,9 @@
 		41CF8AAF1F56DD75009D3350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41CF8AAD1F56DD75009D3350 /* LaunchScreen.storyboard */; };
 		41CF8ABA1F56DD76009D3350 /* TestAKSpeechTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF8AB91F56DD76009D3350 /* TestAKSpeechTests.m */; };
 		41CF8AC51F56DD76009D3350 /* TestAKSpeechUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF8AC41F56DD76009D3350 /* TestAKSpeechUITests.m */; };
-		41CF8AD81F56DE25009D3350 /* AKSpeechMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF8AD51F56DE25009D3350 /* AKSpeechMgr.m */; };
-		41CF8AD91F56DE25009D3350 /* AKSpeechModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF8AD71F56DE25009D3350 /* AKSpeechModel.m */; };
 		41CF8ADB1F56EAA0009D3350 /* ios中支持的语言.json in Resources */ = {isa = PBXBuildFile; fileRef = 41CF8ADA1F56EAA0009D3350 /* ios中支持的语言.json */; };
+		41E2D2A01F61784800C37DB5 /* AKSpeechMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E2D29D1F61784800C37DB5 /* AKSpeechMgr.m */; };
+		41E2D2A11F61784800C37DB5 /* AKSpeechModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E2D29F1F61784800C37DB5 /* AKSpeechModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +54,12 @@
 		41CF8AC01F56DD76009D3350 /* TestAKSpeechUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAKSpeechUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CF8AC41F56DD76009D3350 /* TestAKSpeechUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAKSpeechUITests.m; sourceTree = "<group>"; };
 		41CF8AC61F56DD76009D3350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41CF8AD31F56DE25009D3350 /* AKASpeechDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKASpeechDefine.h; sourceTree = "<group>"; };
-		41CF8AD41F56DE25009D3350 /* AKSpeechMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSpeechMgr.h; sourceTree = "<group>"; };
-		41CF8AD51F56DE25009D3350 /* AKSpeechMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSpeechMgr.m; sourceTree = "<group>"; };
-		41CF8AD61F56DE25009D3350 /* AKSpeechModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSpeechModel.h; sourceTree = "<group>"; };
-		41CF8AD71F56DE25009D3350 /* AKSpeechModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSpeechModel.m; sourceTree = "<group>"; };
 		41CF8ADA1F56EAA0009D3350 /* ios中支持的语言.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ios中支持的语言.json"; sourceTree = "<group>"; };
+		41E2D29B1F61784800C37DB5 /* AKASpeechDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKASpeechDefine.h; sourceTree = "<group>"; };
+		41E2D29C1F61784800C37DB5 /* AKSpeechMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSpeechMgr.h; sourceTree = "<group>"; };
+		41E2D29D1F61784800C37DB5 /* AKSpeechMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSpeechMgr.m; sourceTree = "<group>"; };
+		41E2D29E1F61784800C37DB5 /* AKSpeechModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSpeechModel.h; sourceTree = "<group>"; };
+		41E2D29F1F61784800C37DB5 /* AKSpeechModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSpeechModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 		41CF8A9E1F56DD75009D3350 /* TestAKSpeech */ = {
 			isa = PBXGroup;
 			children = (
-				41CF8AD21F56DE25009D3350 /* sources */,
+				41E2D29A1F61784800C37DB5 /* sources */,
 				41CF8AA21F56DD75009D3350 /* AppDelegate.h */,
 				41CF8AA31F56DD75009D3350 /* AppDelegate.m */,
 				41CF8AA51F56DD75009D3350 /* ViewController.h */,
@@ -151,16 +151,17 @@
 			path = TestAKSpeechUITests;
 			sourceTree = "<group>";
 		};
-		41CF8AD21F56DE25009D3350 /* sources */ = {
+		41E2D29A1F61784800C37DB5 /* sources */ = {
 			isa = PBXGroup;
 			children = (
-				41CF8AD31F56DE25009D3350 /* AKASpeechDefine.h */,
-				41CF8AD41F56DE25009D3350 /* AKSpeechMgr.h */,
-				41CF8AD51F56DE25009D3350 /* AKSpeechMgr.m */,
-				41CF8AD61F56DE25009D3350 /* AKSpeechModel.h */,
-				41CF8AD71F56DE25009D3350 /* AKSpeechModel.m */,
+				41E2D29B1F61784800C37DB5 /* AKASpeechDefine.h */,
+				41E2D29C1F61784800C37DB5 /* AKSpeechMgr.h */,
+				41E2D29D1F61784800C37DB5 /* AKSpeechMgr.m */,
+				41E2D29E1F61784800C37DB5 /* AKSpeechModel.h */,
+				41E2D29F1F61784800C37DB5 /* AKSpeechModel.m */,
 			);
-			path = sources;
+			name = sources;
+			path = ../../sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,10 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41CF8AD91F56DE25009D3350 /* AKSpeechModel.m in Sources */,
+				41E2D2A11F61784800C37DB5 /* AKSpeechModel.m in Sources */,
 				41CF8AA71F56DD75009D3350 /* ViewController.m in Sources */,
 				41CF8AA41F56DD75009D3350 /* AppDelegate.m in Sources */,
-				41CF8AD81F56DE25009D3350 /* AKSpeechMgr.m in Sources */,
+				41E2D2A01F61784800C37DB5 /* AKSpeechMgr.m in Sources */,
 				41CF8AA11F56DD75009D3350 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

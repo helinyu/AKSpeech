@@ -16,6 +16,9 @@
     if (self) {
         _rate = 0.5;
         _volume = 1.f;
+        _pitchMultiPlier = 1.f;
+        
+        _language = @"zh-CN";
     }
     return self;
 }

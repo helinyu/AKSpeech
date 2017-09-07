@@ -138,4 +138,26 @@
     !_deleegateBlock?:_deleegateBlock(synthesizer, utterance, characterRange, AKASpeechDelegateTypeWillSpeakRangeOfString);
 }
 
+//deliver methods
+
+- (BOOL)isSpeaking {
+    return _synthesizer.isSpeaking;
+}
+
+- (BOOL)isPaused {
+    return _synthesizer.isPaused;
+}
+
+- (BOOL)stopSpeakingAtBoundary:(AVSpeechBoundary)boundary {
+    return [_synthesizer stopSpeakingAtBoundary:boundary];
+}
+
+- (BOOL)pauseSpeakingAtBoundary:(AVSpeechBoundary)boundary {
+    return [_synthesizer pauseSpeakingAtBoundary:boundary];
+}
+
+- (BOOL)continueSpeaking {
+    return [_synthesizer continueSpeaking];
+}
+
 @end

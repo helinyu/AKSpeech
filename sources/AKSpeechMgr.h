@@ -8,10 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "AKASpeechDefine.h"
-@class AVSpeechSynthesizer;
-@class AVSpeechSynthesisVoice;
-@class AVSpeechUtterance;
 @class AKSpeechModel;
+#import <AVFoundation/AVFAudio.h>
 
 @interface AKSpeechMgr : NSObject
 
@@ -23,5 +21,15 @@ typedef void(^AKSpeechTotalDelegateBlock)(AVSpeechSynthesizer *synthesizer, AVSp
 //typedef void(^SpeechSimpleNomalDelegateBlock)(AVSpeechUtterance *utterance, AKASpeechDelegateType type);
 
 - (void)speechWithItem:(AKSpeechModel *)item complete:(AKSpeechTotalDelegateBlock)delegateBlock;
+
+- (BOOL)isSpeaking;
+
+- (BOOL)isPaused;
+
+- (BOOL)stopSpeakingAtBoundary:(AVSpeechBoundary)boundary;
+
+- (BOOL)pauseSpeakingAtBoundary:(AVSpeechBoundary)boundary;
+
+- (BOOL)continueSpeaking;
 
 @end
